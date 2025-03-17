@@ -1,0 +1,128 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
+
+/* General Table Styling
+.table-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+} */
+
+table {
+    width: 100%;
+    max-width: 600px;
+    border-collapse: collapse;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #f8f9fa;
+    color: #333;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Table Headers */
+th {
+    background: #2cd0af;
+    color: #f5f5f5;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 12px;
+}
+
+/* Table Rows */
+td {
+    border-bottom: 1px solid #ddd;
+    padding: 12px;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f1f1f1;
+}
+
+tbody tr:hover {
+    background-color: #e7e7e7;
+    transition: background 0.2s ease-in-out;
+}
+
+/* Details Button Styling */
+.addbtn {
+    font-family: 'Inter', sans-serif;
+    padding: 8px 14px;
+    background: #2cd0af;
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.addbtn:hover {
+    background: #2cd0af;
+    transform: translateY(-2px);
+}
+
+.addbtn:active {
+    transform: scale(0.96);
+}
+
+
+/* submit btn */
+
+.submitbtn {
+    font-family: 'Inter', sans-serif;
+    padding: 8px 14px;
+    background: #2cd0af;
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.submitbtn:hover {
+    background: #2cd0af;
+    transform: translateY(-2px);
+}
+
+.submitbtn:active {
+    transform: scale(0.96);
+}
+
+/* pop-up div style */
+
+.popContainer{
+    width: 400px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.box label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.box input, .box select {
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.box input:focus, .box select:focus {
+    border-color: #2cd0af;
+    outline: none;
+}
