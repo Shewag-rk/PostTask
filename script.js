@@ -40,12 +40,25 @@ xhr.onerror = () =>{
 xhr.send();
 
 
+
 let id = document.getElementById('id');
 let username = document.getElementById('username');
 let name = document.getElementById('name');
 let email = document.getElementById('email');
 
 
+var addBtn = document.getElementById('addUserbtn');
+var popUpDiv = document.getElementById('newContainer');
+var closeBtn = document.getElementById('closeBtn');
+
+addBtn.addEventListener("click", function(){
+    popUpDiv.style.display = "block"
+})
+
+
+closeBtn.addEventListener("click", function(){
+    popUpDiv.style.display = "none";
+})
 
 
 const rqst = new XMLHttpRequest();

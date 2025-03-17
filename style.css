@@ -58,6 +58,7 @@ tbody tr:hover {
     border: none;
     border-radius: 6px;
     cursor: pointer;
+    margin-bottom: 10px;
     transition: all 0.2s ease-in-out;
 }
 
@@ -99,6 +100,7 @@ tbody tr:hover {
 
 .popContainer{
     width: 400px;
+    display: none;
 }
 
 .box {
@@ -125,4 +127,10 @@ tbody tr:hover {
 .box input:focus, .box select:focus {
     border-color: #2cd0af;
     outline: none;
+}
+
+.fa-xmark{
+    cursor: pointer;
+    position: relative;
+    left: 420px;
 }
