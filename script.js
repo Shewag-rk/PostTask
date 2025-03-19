@@ -48,14 +48,14 @@ closeBtn.addEventListener("click", function(){
 })
 
 
-function showAlter(message, className){
-    alert.innerHTML = message;
-    alert.className = `alert ${className}`;
-    setTimeout(() =>{
-        alert.innerHTML = '';
-        alert.className = '';
-    }, 2000);
-}
+// function showAlter(message, className){
+//     alert.innerHTML = message;
+//     alert.className = `alert ${className}`;
+//     setTimeout(() =>{
+//         alert.innerHTML = '';
+//         alert.className = '';
+//     }, 2000);
+// }
 
 submitbtn.addEventListener("click", function(e){
     e.preventDefault();
@@ -66,20 +66,20 @@ submitbtn.addEventListener("click", function(e){
     let emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     
 
-    if(inputField.trim() === ''){
-        showAlter('Need username name', "alert-danger");
-        return false;
-    }
+    // if(inputField.trim() === ''){
+    //     showAlter('Need username name', "alert-danger");
+    //     return false;
+    // }
 
-    if(profileName.trim() === ''){
-        showAlter('Name requried', "alert-dangername");
-        return false;
-    }
+    // if(profileName.trim() === ''){
+    //     showAlter('Name requried', "alert-dangername");
+    //     return false;
+    // }
     
-    if(!emailRegex.test(userEmail)){
-        showAlter("Enter valid email", "alert-dangeremail");
-        return false;
-    }
+    // if(!emailRegex.test(userEmail)){
+    //     showAlter("Enter valid email", "alert-dangeremail");
+    //     return false;
+    // }
 
     const userData = {
         username: inputField,
@@ -90,15 +90,15 @@ submitbtn.addEventListener("click", function(e){
     // console.log(userData);
     console.log(data);
 
-    // let upload = new XMLHttpRequest();
+    let upload = new XMLHttpRequest();
 
-    // upload.open('POST', "https://mimic-server-api.vercel.app/users", true);
-    // upload.setRequestHeader('Content-type', 'application/json; charset=UTF-8');
-    // upload.send(data);
+    upload.open('POST', "https://mimic-server-api.vercel.app/users", true);
+    upload.setRequestHeader('Content-type', 'application/json; charset=UTF-8');
+    upload.send(data);
 
-    // function uploadUserDetalis(){
+    function uploadUserDetalis(){
        
-    // }
-    // uploadUserDetalis()
+    }
+    uploadUserDetalis()
 })
 
