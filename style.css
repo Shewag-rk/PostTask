@@ -134,3 +134,34 @@ tbody tr:hover {
     position: relative;
     left: 420px;
 }
+
+.alert {
+    margin-bottom: 1rem;
+    height: 1.25rem;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    font-size: 0.7rem;
+    border-radius: 0.25rem;
+    letter-spacing: var(--spacing);
+    text-transform: capitalize;
+  }
+  .alert-danger {
+    color: #f20f26;
+    background: #f8d7da;
+  }
+  .alert-success {
+    display: none;
+    color: #21eb50;
+    background: #d4edda;
+  }
+
+  .alert-dangername{
+    color: #f20f26;
+    background: #f8d7da;
+  }
+
+  .dangeremail{
+    color: #f20f26;
+    background: #f8d7da;
+  }
